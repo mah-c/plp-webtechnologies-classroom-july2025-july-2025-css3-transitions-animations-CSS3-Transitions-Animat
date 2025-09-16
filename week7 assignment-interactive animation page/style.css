@@ -1,0 +1,58 @@
+/* General Styling */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2em;
+  background-color: #f0f8ff;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* 🎨 Part 1: CSS3 Transitions and Keyframe Animations */
+
+/* Button hover effect using transitions */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+/* Box styling */
+#animatedBox {
+  width: 100px;
+  height: 100px;
+  background-color: #2196f3;
+  margin: 40px auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Define animation with keyframes */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Class to trigger animation */
+.bounce-animation {
+  animation: bounce 0.6s ease;
+}
